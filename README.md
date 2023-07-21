@@ -5,7 +5,7 @@ Trabajo practico de la Materia Entorno de la carrera TUIA, de Dominguez, Ramiro;
 
 Se puede hacer de dos maneras 
 
-### Desde terminal (not recommended):
+### Desde terminal (no recomendado):
 gh repo clone GianfrancoFrattini/TP-entorno
 
 ### Descargar el archivo .zip (altamente recomendado): 1) Seleccionar CODE 2) Download ZIP
