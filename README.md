@@ -9,6 +9,7 @@ Desde terminal (not recommended):
 gh repo clone GianfrancoFrattini/TP-entorno
 
 Descargar el archivo .zip (altamente recomendado):
+
 ![image](https://github.com/GianfrancoFrattini/TP-entorno/assets/105806173/5af9b422-d576-4a53-874d-206e2de49acb)
 
 
