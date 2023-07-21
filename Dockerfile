@@ -1,20 +1,23 @@
-# Utiliza una imagen base de Ubuntu
-FROM ubuntu:latest
+# Utilizamos la imagen base de Ubuntu
+FROM ubuntu
 
-# Instala cualquier paquete necesario (p. ej., zip)
-RUN apt-get update && apt-get install -y zip && apt-get install -y imagemagick
+# Instalamos las dependencias necesarias
+RUN apt-get update && \
+    apt-get install -y zip imagemagick wget && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-# Crea un directorio dentro del contenedor
-RUN mkdir /scripts
+# Creamos un directorio dentro del contenedor para copiar los scripts
+WORKDIR /app
 
-# Copia los scripts desde el host al contenedor
-COPY scripts/* /scripts/
+# Copiamos los scripts de la carpeta "scripts" en el directorio del contenedor
+COPY scripts /app
 
-# Establece el directorio de trabajo
-WORKDIR /scripts
+# Otorgamos permisos de ejecución a los scripts
+RUN chmod +x /app/*.sh
 
-# Ejecuta comprimir.sh dentro del contenedor
-CMD ./menu.sh
+# Directorio donde se almacenarán los archivos fuera del contenedor
+VOLUME /app/outside
 
-# Exponer el volumen para que se pueda acceder desde fuera del contenedor
-VOLUME ["/scripts"]
+# Ejecutamos el script menu.sh que a su vez ejecutará comprimir.sh
+CMD ["/bin/bash", "/app/menu.sh"]

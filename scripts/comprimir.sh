@@ -16,6 +16,7 @@ if [ -d "images" ] && $found; then
 	grep -E 'a$' listaValidos.txt | wc -l > nombresMujer.txt
 	zip -r comprimidos.zip nombreImagenes.txt listaValidos.txt nombresMujer.txt images/
 	echo "Se han comprimido las imagenes y las listas."
+	mv comprimidos.zip /app/outside/
 else
 	echo "No hay imagenes procesadas validas"
 	exit 1
