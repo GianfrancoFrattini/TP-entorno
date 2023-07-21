@@ -14,7 +14,7 @@ gh repo clone GianfrancoFrattini/TP-entorno
 
 ## 2) Descomprimir el archivo zip en la carpeta que uno desee trabajar
 
-Esto se puede usar utilizando unzip.
+Esto se puede usar utilizando unzip
 
 ## 3) Generar la imagen de docker con el docker file usando el siguiente codigo.
 
