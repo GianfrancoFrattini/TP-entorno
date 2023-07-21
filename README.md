@@ -10,8 +10,7 @@ gh repo clone GianfrancoFrattini/TP-entorno
 
 Descargar el archivo .zip (altamente recomendado):
 
-![image](https://github.com/GianfrancoFrattini/TP-entorno/assets/105806173/5af9b422-d576-4a53-874d-206e2de49acb)
-
+![image](https://github.com/GianfrancoFrattini/TP-entorno/assets/105806173/675f782f-ea88-4fec-9049-bff27d3c34bb)
 
 docker build -t entorno .
 
