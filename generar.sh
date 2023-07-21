@@ -4,7 +4,7 @@ if [ -z "$cant_img" ]; then
     echo "Ingrese el numero de imagenes que desee descargar: "
     read cant_img # Read devuelve el valor que se ingrese a la variable cant_img
 fi
-if [[ $cant_img =~ ^[0-9]+$ ]] && [ $cant_img -gt 1 ]; then
+if [[ $cant_img =~ ^[0-9]+$ ]] && [ $cant_img -gt 0 ]; then
     wget -O nombres.csv "http://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv"
     archivo_csv="nombres.csv"
     num_lineas=$(wc -l < $archivo_csv)
