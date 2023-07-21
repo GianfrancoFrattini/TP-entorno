@@ -1,4 +1,4 @@
-# TP-entorno
+# TP entorno
 Trabajo practico de la Materia Entorno de la carrera TUIA, de Dominguez, Ramiro; Frattini, Gianfranco; Prado, Matias
 
 ## 1) Descargar el repositorio desde GITHUB:
