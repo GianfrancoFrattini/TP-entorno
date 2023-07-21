@@ -1,6 +1,10 @@
 #!/bin/bash
 
-IMAGENES=$(ls | grep -E "^[A-Z][a-z]+\\.jpg$")
+IMAGENES=$(ls images/ | grep -E "^[A-Z][a-z]+( [A-Z][a-z]+)*\\.jpg$")
+OLDIFS=$IFS
+IFS=$'\n'
 for imagen in $IMAGENES; do
-  convert "$imagen" -resize 512x512 "$imagen"
+  echo $imagen
+  convert "images/$imagen" -resize 512x512 "images/$imagen"
 done
+IFS=$OLDIFS
