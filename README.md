@@ -8,7 +8,10 @@ Se puede hacer de dos maneras
 ### Desde terminal (no recomendado):
 gh repo clone GianfrancoFrattini/TP-entorno
 
-### Descargar el archivo .zip (altamente recomendado): 1) Seleccionar CODE 2) Download ZIP
+### Descargar el archivo .zip (altamente recomendado): 
+
+1) Seleccionar CODE
+2) Download ZIP
 
 ![image](https://github.com/GianfrancoFrattini/TP-entorno/assets/105806173/675f782f-ea88-4fec-9049-bff27d3c34bb)
 
