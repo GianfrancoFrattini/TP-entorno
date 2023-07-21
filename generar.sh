@@ -21,4 +21,5 @@ if [[ $cant_img =~ ^[0-9]+$ ]] && [ $cant_img -gt 0 ]; then
 	rm -r images
 else
     echo "No es un numero valido"
+    exit 1
 fi

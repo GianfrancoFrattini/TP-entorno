@@ -9,5 +9,6 @@ if [ -n "$IMAGENES" ]; then
     done
 else
     echo -e "\e[31mWARNING!!!\e[0m \e[33mNo hay nombres validos para procesar\e[0m"
+    exit 1
 fi
 IFS=$OLDIFS
